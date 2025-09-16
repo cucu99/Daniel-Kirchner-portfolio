@@ -10,6 +10,7 @@ A Next.js 15 project for my personal portfolio and blog. The goal is to showcase
 ## Planning Docs
 - [Product Brief](docs/product-brief.md)
 - [Information Architecture](docs/information-architecture.md)
+- [Visual Direction](docs/visual-direction.md)
 
 These documents will evolve as the project grows; keep them in sync with implementation decisions.
 

@@ -1,0 +1,221 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Daniel Kirchner - Portfolio</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+      }
+      .project-card:hover .project-overlay {
+        opacity: 1;
+      }
+      .project-card:hover .project-image {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-4 shadow-sm">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3 text-gray-900" href="#">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-tighter">Daniel Kirchner</h1>
+</a>
+</div>
+<nav class="flex items-center gap-6 text-sm font-medium">
+<a class="text-gray-600 hover:text-[var(--primary-color)] transition-colors" href="#">About</a>
+<a class="text-[var(--primary-color)] font-semibold" href="#">Projects</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] transition-colors" href="#">Blog</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] transition-colors" href="#">Contact</a>
+<button class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-9 px-4 bg-[var(--primary-color)] text-white text-sm font-bold shadow-sm hover:bg-opacity-90 transition-all">
+<span class="truncate">Resume</span>
+</button>
+</nav>
+</header>
+<main class="flex-1 px-10 py-12 md:px-16 lg:px-24">
+<div class="max-w-7xl mx-auto">
+<div class="mb-12 text-center">
+<h2 class="text-4xl font-extrabold tracking-tighter text-gray-900 sm:text-5xl">My Projects</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">A selection of projects showcasing my skills and experience in web development.</p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="project-card group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="overflow-hidden">
+<div class="project-image w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMYXC2aHn9graGPSXPqYggqt6sGN4OnD5Q75YWSUmz4wMwqHTqSvZcOMk3wgySE3m5U5LUoxjFx1B0tl_SXfMH95dVhZxKzvybuReIPE4TXR7VaId_8nUDWzh5vcLwbrL7HmhVKCuqzfWDIdZ_4IzLEet6t_rmWUsMsFU1tztQSFZFMVQJlsa1abo2G0sDcY31bc1QHvWREYQ6D8ktLghsfuyRYArpt7TQnIxSnel-8RwYuMoG-Ai8w5hDY7zuRh0pw1TCZCbI67Wc");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 bg-white">
+<div>
+<h3 class="text-xl font-bold text-gray-900">E-commerce Platform</h3>
+<p class="mt-2 text-gray-600 text-sm">A full-featured e-commerce platform with user authentication, product management, and payment integration.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+<span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+<span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+</div>
+</div>
+</div>
+<div class="project-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="flex gap-4">
+<a class="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">link</span>
+                      Live Demo
+                    </a>
+<a class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined">code</span>
+                      GitHub
+                    </a>
+</div>
+</div>
+</div>
+<div class="project-card group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="overflow-hidden">
+<div class="project-image w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn_C3W6HloD-zFLPgp5nT2ZCOuzoD-Y6E0B120opLkoA2VAspn_VQIIxHSmsX_aE81VSWJYULswDyYS04a9oyjuezstsFE51NTQ6Ad62mIG9og_3Ydv0ABXrkxrkftnWPuMTn8bOj1h8w5RERYBeny5foZ1Q8apXtvO7fHYHBmCBAcPgwQVXhTnXLhhNMbyBxXkX8xP_lcZHdC_OHWePTLoAgTTrp6q1L6m7aG_VD_s1u4V8fiPHq_d7p8bRVcKJII6AYlGIabyifj");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 bg-white">
+<div>
+<h3 class="text-xl font-bold text-gray-900">Social Media Dashboard</h3>
+<p class="mt-2 text-gray-600 text-sm">A dashboard for managing multiple social media accounts, scheduling posts, and analyzing engagement.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+<span class="inline-block bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Laravel</span>
+<span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MySQL</span>
+</div>
+</div>
+</div>
+<div class="project-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="flex gap-4">
+<a class="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">link</span>
+                      Live Demo
+                    </a>
+<a class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined">code</span>
+                      GitHub
+                    </a>
+</div>
+</div>
+</div>
+<div class="project-card group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="overflow-hidden">
+<div class="project-image w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgurJmORfBsXNC6XjpSxoN3-Evy2mDSlaMFbLQEnIIJYaYRDhIE_RrlDCDS5G82QC0gKoNnOeOj4kCxwCTOqrPTuYxTNiylpo-cnSViwbKwF1gqxkAxAHcOaRZPR_Dni9U4gHumV-_pt_bBvPGjUGIy9JIZu86LtCWO7i25Iwb6FniHEoeu8IvLlHYfZ4PNHP4rvGI-IfhtmITeSoJ06-9ZRrLpWyVLdeC0EQ-Kun9s_1MVUe2hwCJ6kvjRjZc6Ujg2D8VwH0xmbEi");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 bg-white">
+<div>
+<h3 class="text-xl font-bold text-gray-900">Personal Finance Tracker</h3>
+<p class="mt-2 text-gray-600 text-sm">A personal finance tracker for budgeting, expense tracking, and financial goal setting.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="inline-block bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Svelte</span>
+<span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+<span class="inline-block bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+</div>
+</div>
+</div>
+<div class="project-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="flex gap-4">
+<a class="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">link</span>
+                      Live Demo
+                    </a>
+<a class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined">code</span>
+                      GitHub
+                    </a>
+</div>
+</div>
+</div>
+<div class="project-card group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="overflow-hidden">
+<div class="project-image w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbDh7qy7XK0sMjsj1PgSl7v3K7VPlgoqEC-vxaCTzqK-QZ_6d33xOkXL9yiv-O4t43XWyCR3-imBNxeqG70tHURAJFFOrk9uz2UD-jDUIZvA_1hzCiz2h2bvsWwpfd-t1bzqSTsczb8_SyTf0pAxshC-74lttDClHZTRmw1BfC2ZM0nUKQSisVyWsYx26FfUxCGn3qxgPxuIKf8-yjGx-iy7xosC5ntBSUkYb317UdBlDnsg6jCXno-E9rc2MSRA3c6_-RVU3ORXmY");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 bg-white">
+<div>
+<h3 class="text-xl font-bold text-gray-900">Task Management App</h3>
+<p class="mt-2 text-gray-600 text-sm">A task management application with features for creating, organizing, and prioritizing tasks.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+<span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+</div>
+</div>
+</div>
+<div class="project-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="flex gap-4">
+<a class="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">link</span>
+                      Live Demo
+                    </a>
+<a class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined">code</span>
+                      GitHub
+                    </a>
+</div>
+</div>
+</div>
+<div class="project-card group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="overflow-hidden">
+<div class="project-image w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-CRuBWMC2nHSsKcuHTwBbI3ecxqFmjClcO-kI3hV7Xt7v3Atcvm2oNSEr8ZhilbhfhBBPFCDi38R1eswn1qogdufJkuFdxcwwyJiXiyTfBdiEFcMRKDdf4yTpGaonbH8LBx_1kgJOFniWIHNZkM1FjpvQjYmtbAu4FwcJpCz4RxTHoSPBclz1t0FId-ziW1PYICvpMBBeHHYEJed62W-8utSvFKJXv2xWZXJKuANbxZK-RNneVLIsqXALitCdHETPhpMd2k1pZ7Ou");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 bg-white">
+<div>
+<h3 class="text-xl font-bold text-gray-900">Portfolio Website</h3>
+<p class="mt-2 text-gray-600 text-sm">A personal portfolio website to showcase my projects and skills.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="inline-block bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js</span>
+<span class="inline-block bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+</div>
+</div>
+</div>
+<div class="project-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="flex gap-4">
+<a class="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">link</span>
+                      Live Demo
+                    </a>
+<a class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined">code</span>
+                      GitHub
+                    </a>
+</div>
+</div>
+</div>
+<div class="project-card group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="overflow-hidden">
+<div class="project-image w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnpruMbVUF1yjdMJ310uVA-Y3BOPn1ROnKonbiqatShKKt1xKNzjTUte9SHyrFwUxLPPCrRBq1Koje3a8UE06mXmzLib7F-4wXr5AWiMwtjkaoGNpl7ixAo7rW_PNBYTKvvckWf9k2Tpem5hDrb78_oiGnXQdZFLbZ5I_SBEI63FGFZe0LgOqJvOQtJej5mPDSnx0xNP8VDF9iUUITH2KO5QL_injWMaOw0LWz3nT5kR11eUgSlh4sOeRFyFjtCWLLcFhnlE8TL4DX");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 bg-white">
+<div>
+<h3 class="text-xl font-bold text-gray-900">Blog Platform</h3>
+<p class="mt-2 text-gray-600 text-sm">A blog platform for sharing articles, tutorials, and insights on web development.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="inline-block bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Ruby on Rails</span>
+<span class="inline-block bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+</div>
+</div>
+</div>
+<div class="project-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<div class="flex gap-4">
+<a class="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm transition-all hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">link</span>
+                      Live Demo
+                    </a>
+<a class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined">code</span>
+                      GitHub
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

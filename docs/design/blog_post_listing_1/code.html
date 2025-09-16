@@ -1,0 +1,182 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+        --secondary-color: #f0f2f4;
+        --text-primary: #111418;
+        --text-secondary: #617589;
+      }
+      .active-filter {
+        background-color: var(--primary-color) !important;
+        color: white !important;
+      }
+    </style>
+</head>
+<body class="bg-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root" style="font-family: Inter, 'Noto Sans', sans-serif;">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-4">
+<div class="flex items-center gap-3 text-text-primary">
+<svg class="h-8 w-8 text-primary-color" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-text-primary text-xl font-bold">Daniel Kirchner</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">About</a>
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Projects</a>
+<a class="text-text-primary text-base font-medium text-[var(--primary-color)]" href="#">Blog</a>
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Contact</a>
+</nav>
+</header>
+<main class="flex-1 bg-white py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<article>
+<header class="mb-8">
+<h1 class="text-4xl font-extrabold text-text-primary tracking-tight sm:text-5xl">Building Scalable Web Applications with Modern Frameworks</h1>
+<div class="mt-4 flex items-center gap-4 text-sm text-text-secondary">
+<div class="flex items-center gap-2">
+<img alt="Daniel Kirchner" class="h-8 w-8 rounded-full" src="https://lh3.googleusercontent.com/a-/AOh14GhJ1QdY2gG_8dF8F8F8F8F8F8F8F8F8F8F8F8F8F8=s96-c"/>
+<span>Daniel Kirchner</span>
+</div>
+<span>•</span>
+<span>January 15, 2024</span>
+</div>
+</header>
+<div class="prose prose-lg max-w-none text-text-primary">
+<p class="lead">
+                In the ever-evolving landscape of web development, building applications that can scale to meet growing user demand is a critical challenge. Modern frameworks like React and Node.js
+                have emerged as powerful tools for creating robust and scalable web solutions. This article explores the best practices, architectural patterns, and performance optimization
+                techniques that will help you build web applications that can handle the test of time and traffic.
+              </p>
+<p>
+                Scalability in web development refers to the ability of a system to handle a growing amount of work by adding resources to the system. For a web application, this means being
+                able to serve an increasing number of users without a decline in performance. Achieving scalability requires careful planning from the outset, from choosing the right technology
+                stack to designing a flexible and resilient architecture.
+              </p>
+<figure>
+<img alt="Web application architecture diagram" class="rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4WusCd2nBhHWe8_QlTb4WmXZ5mCNdBUhyqWQtRYtpCk9xsUvlYD3Waa1ZJH2NMBm8oDQYTuXUMHnmHqEvEBBJ_2c8o7cNC-M_3JT4yPLJnS7HwbbQabnfFK68SXLm7ogFsbYrTKEbTlJCMv5yeUwE25YGn5QA1L7iZhlVYcs0HgyeO5GNUrRnx-f2yuMliKqYOhCuRYfsU964aE1Jkw74RrV8zG564AxLf_BQ83dJ74bSwhidXeara0JqWoDK100maTfo-N3l1Z0F"/>
+<figcaption class="text-center text-sm text-text-secondary mt-2">A conceptual diagram of a modern web application architecture.</figcaption>
+</figure>
+<h2 class="text-2xl font-bold mt-8">Architectural Considerations</h2>
+<p>
+                A microservices architecture is a popular approach for building scalable applications. By breaking down a large application into smaller, independent services, you can scale
+                individual components based on their specific needs. This contrasts with a monolithic architecture, where the entire application must be scaled together.
+              </p>
+<p>
+                When using React for the frontend, structuring your components for reusability and state management is key. Libraries like Redux or MobX can help manage application state in a
+                predictable way, which is crucial as the application grows in complexity. On the backend, Node.js, with its event-driven, non-blocking I/O model, is well-suited for building
+                fast and scalable APIs.
+              </p>
+<h2 class="text-2xl font-bold mt-8">Performance Optimization</h2>
+<p>
+                Optimizing performance is an ongoing process. Techniques like code splitting in React can reduce the initial load time by only sending the code that the user needs. On the
+                backend, implementing caching strategies with tools like Redis can significantly reduce database load and improve response times. Regularly profiling your application to identify
+                bottlenecks is also essential for maintaining performance as your user base grows.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-gray-200 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium text-text-secondary">Share this post:</span>
+<button class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined text-lg text-text-secondary">link</span>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+<svg class="w-4 h-4 text-text-secondary" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 5.033a9.31 9.31 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+<svg class="w-4 h-4 text-text-secondary" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg>
+</button>
+</div>
+</div>
+</article>
+<section class="mt-12">
+<h2 class="text-2xl font-bold text-text-primary mb-6">Comments (3)</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<img alt="Jane Doe" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlbpYGA_f8eFU6XHca-muVweUaAttCBn6js8OuyhQLjt_A80slGFVZ-PWoV3MdX_1aHCOLXb3cDrcQ5w-pHyix9osV2smYfKioZBEG5GI463dWP_piwDgo5LxUdksZ9CyyRvh2ekXKui1RMh1m7LOhtIJD9hO0L7z31tNiYxwfi3pJ1VtSYJL8ZMbwAjmID12akdsxdXt7fB1XkSciRNNWYJ3plkCJVEQG_Bqn06AckZdQjal9xXmsJf8G4BvOaMJVnVE9iRGfkXR"/>
+<div>
+<p class="font-semibold text-text-primary">Jane Doe <span class="text-sm font-normal text-text-secondary">· 2 days ago</span></p>
+<p class="text-text-primary mt-1">Great article! I've been working with React and Node.js for a while, and these tips are super helpful for scaling my projects.</p>
+<button class="text-sm font-medium text-[var(--primary-color)] mt-2">Reply</button>
+</div>
+</div>
+<div class="flex items-start gap-4 ml-14">
+<img alt="John Smith" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV2c2xKYX1jFOvUYmVEmBfuwHIUv1Kz7scH0_K_gcwu3KkmipB8vhWMjtkQ4fkdWIW1UAu0SBM-gAZoYSHMziBWu9jjIZ1W4I5YRyqboZRXhST-O0p90IdD73IzH0pNI2JFnbm6wmzQMBvXyl9j-2MYuUCa7lFVkng_OK7uGRNquSsrLPAEnCl8aWMy_B6mM-5-o5TqmLpMwg5cN2NYNXoCboz9rm8iobxptKT0r5YHVmvn22nSm9HnryLwzTqci6ijQjYBhgP-LjF"/>
+<div>
+<p class="font-semibold text-text-primary">John Smith <span class="text-sm font-normal text-text-secondary">· 1 day ago</span></p>
+<p class="text-text-primary mt-1">Thanks, Jane! Glad you found it useful. Do you have any specific challenges you're facing with scalability?</p>
+<button class="text-sm font-medium text-[var(--primary-color)] mt-2">Reply</button>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<img alt="Sam Wilson" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2zwI5pXj5JyRS7EM_GqnzpqgbIoCLNSi9fpg09xajSwOa9DWe_ME-_Q5dIeT-AzkqzkyoNMb2Q-Bx4fXQAI2erIbV7OqCVtV0n6JjIscMfzOoz5WzmgnjZL6A6qhl6bzIuGKkBd2bEssS4sguyRHwRmIlNMO8AGXVKrQdgy2H8X2NjHDn4rfrkmBZCFis0kL3_KFoQWlmsZTCb01kpKOCGUJPjdwLFKjYJogdzxA-hkwr_76C8UO_6YgeHG6qiZ0U8TbPIXJmNFyp"/>
+<div>
+<p class="font-semibold text-text-primary">Sam Wilson <span class="text-sm font-normal text-text-secondary">· 5 hours ago</span></p>
+<p class="text-text-primary mt-1">The section on microservices was particularly insightful. It’s something I've been considering for my next big project.</p>
+<button class="text-sm font-medium text-[var(--primary-color)] mt-2">Reply</button>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-gray-200">
+<h3 class="text-lg font-semibold text-text-primary mb-4">Leave a Comment</h3>
+<form>
+<div class="mb-4">
+<label class="sr-only" for="comment">Comment</label>
+<textarea class="form-textarea block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm" id="comment" name="comment" placeholder="Write your comment..." rows="4"></textarea>
+</div>
+<button class="px-4 py-2 bg-[var(--primary-color)] text-white rounded-md font-semibold hover:bg-blue-700 transition-colors" type="submit">Post Comment</button>
+</form>
+</div>
+</section>
+<section class="mt-16">
+<h2 class="text-2xl font-bold text-text-primary mb-6">Related Posts</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="flex flex-col rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2CnzTLNHSgdplv0DzgQgQQL3AaMdkR-_h9aRaU4kNr36F28PwrgV-EHVAPEmMTbJDDPBikcLKqPm4MYsHheqdlugtyZQUytYuti5g7h9C7tS7BB3Rtxwhkqbx4ZEOBTVaS4c9qirIcUNAJ0hSiWcP75M_OCK0uLmvDBLqE-Xd-BOLi9QhwW0eI5EcpNxckKTxT3N-h2u_qaDAjprZpMArZzGpC0IIbRZD7XUST_jrEAHmUb9CGHwtdJVkgjJdvNvVT25eJ3hNs-");'></div>
+<div class="p-4 flex-1 flex flex-col">
+<p class="text-sm text-text-secondary font-medium mb-1">Mobile Development</p>
+<h3 class="text-lg font-bold text-text-primary mb-2">Cross-Platform Mobile Development: A Comprehensive Guide</h3>
+<p class="text-text-secondary text-sm flex-1">
+                    Dive into the world of cross-platform mobile development with frameworks like React Native and Flutter.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline mt-4 self-start" href="#">Read More →</a>
+</div>
+</article>
+<article class="flex flex-col rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCi1yiZJuQghP_vBKWqNTOaxWRy08bRIjkg7mciHe6jpHbBVKv06Gn91fGz_bBo2zM4lJmrxl-kVuEgF4WcrTnkupPMkDoFft3f8YOI69bFxxyRO4eNQoLcowmjNKJFQgbs-rwhyAvyWlWtO65QlqWiIKNY2rUkni1DBvO7EkZ-Ux0e-xEuIisnUWkIgLACMsBbMZsZLC_LoIrOJ0okpSGGPY5gnTeDTn7HB5UEtAVuB6qt0YX9bBK64poWiib0fmSiZqU87ZY3ZIqy");'></div>
+<div class="p-4 flex-1 flex flex-col">
+<p class="text-sm text-text-secondary font-medium mb-1">Data Science</p>
+<h3 class="text-lg font-bold text-text-primary mb-2">Introduction to Machine Learning for Developers</h3>
+<p class="text-text-secondary text-sm flex-1">
+                    Get started with machine learning concepts and techniques tailored for software developers.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline mt-4 self-start" href="#">Read More →</a>
+</div>
+</article>
+<article class="flex flex-col rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPw1bf2iKdKFp3m9tNvLBL759NTYIlC4XUR6wgppxYvPPYqYG5Gdox4UdrS3ubtIfB0CixWCDmvWlnFFFj9zMttfB741pAyhuv8GA7VpYRB8klBYuUTV7feR38dx0P93GYD6exav5qgrtcBgnCsp8xBBxWnE5_dFmj4SLrqLsKW9dImVPfr8T7UdqloOG1qtDOmsWyXgVZgz7-pvSsceHtMsZhtbm0QPPWQXFw_y5mZL6x9-6qZ4MQKG4pkMXs3puP1hNz_1rNutTO");'></div>
+<div class="p-4 flex-1 flex flex-col">
+<p class="text-sm text-text-secondary font-medium mb-1">Web Development</p>
+<h3 class="text-lg font-bold text-text-primary mb-2">Mastering CSS Grid and Flexbox for Responsive Layouts</h3>
+<p class="text-text-secondary text-sm flex-1">
+                    Enhance your web design skills by mastering CSS Grid and Flexbox for creating responsive layouts.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline mt-4 self-start" href="#">Read More →</a>
+</div>
+</article>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</body></html>

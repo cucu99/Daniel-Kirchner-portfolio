@@ -1,0 +1,141 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+        --secondary-color: #f0f2f4;
+        --text-primary: #111418;
+        --text-secondary: #617589;
+      }
+      .active-filter {
+        background-color: var(--primary-color) !important;
+        color: white !important;
+      }
+    </style>
+</head>
+<body class="bg-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root" style="font-family: Inter, 'Noto Sans', sans-serif;">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-4">
+<div class="flex items-center gap-3 text-text-primary">
+<svg class="h-8 w-8 text-primary-color" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-text-primary text-xl font-bold">Daniel Kirchner</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">About</a>
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Projects</a>
+<a class="text-text-primary text-base font-medium text-[var(--primary-color)]" href="#">Blog</a>
+<a class="text-text-primary text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Contact</a>
+</nav>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-5xl">
+<div class="text-center mb-10">
+<h1 class="text-4xl font-bold text-text-primary tracking-tight sm:text-5xl">My Blog</h1>
+<p class="mt-4 text-lg text-text-secondary">Explore my thoughts on software development, technology trends, and industry insights.</p>
+</div>
+<div class="mb-8 flex flex-col sm:flex-row gap-4">
+<div class="flex-1">
+<label class="sr-only" for="search">Search blog posts</label>
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="material-symbols-outlined text-text-secondary"> search </span>
+</div>
+<input class="form-input block w-full rounded-md border-0 bg-[var(--secondary-color)] py-3 pl-10 text-text-primary placeholder:text-text-secondary focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)] sm:text-sm sm:leading-6" id="search" name="search" placeholder="Search blog posts" value=""/>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<button class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-[var(--secondary-color)] text-text-primary hover:bg-gray-200 active-filter">
+                  All
+                </button>
+<button class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-[var(--secondary-color)] text-text-primary hover:bg-gray-200">
+                  Web Development
+                </button>
+<button class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-[var(--secondary-color)] text-text-primary hover:bg-gray-200">
+                  Mobile Development
+                </button>
+<button class="px-4 py-2 rounded-md text-sm font-medium transition-colors bg-[var(--secondary-color)] text-text-primary hover:bg-gray-200">
+                  Data Science
+                </button>
+</div>
+</div>
+<div class="grid gap-12">
+<article class="flex flex-col md:flex-row items-center gap-8 rounded-lg overflow-hidden">
+<div class="w-full md:w-1/3 h-64 md:h-auto md:aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4WusCd2nBhHWe8_QlTb4WmXZ5mCNdBUhyqWQtRYtpCk9xsUvlYD3Waa1ZJH2NMBm8oDQYTuXUMHnmHqEvEBBJ_2c8o7cNC-M_3JT4yPLJnS7HwbbQabnfFK68SXLm7ogFsbYrTKEbTlJCMv5yeUwE25YGn5QA1L7iZhlVYcs0HgyeO5GNUrRnx-f2yuMliKqYOhCuRYfsU964aE1Jkw74RrV8zG564AxLf_BQ83dJ74bSwhidXeara0JqWoDK100maTfo-N3l1Z0F");'></div>
+<div class="flex-1">
+<p class="text-sm text-text-secondary font-medium mb-1">Web Development • 15 Jan 2024</p>
+<h3 class="text-xl font-bold text-text-primary mb-2">Building Scalable Web Applications with Modern Frameworks</h3>
+<p class="text-text-secondary mb-4">
+                    Explore the best practices for developing scalable web applications using modern frameworks like React and Node.js. Learn about architecture, performance optimization, and
+                    deployment strategies.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline" href="#">Read More →</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row-reverse items-center gap-8 rounded-lg overflow-hidden">
+<div class="w-full md:w-1/3 h-64 md:h-auto md:aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoK2CnzTLNHSgdplv0DzgQgQQL3AaMdkR-_h9aRaU4kNr36F28PwrgV-EHVAPEmMTbJDDPBikcLKqPm4MYsHheqdlugtyZQUytYuti5g7h9C7tS7BB3Rtxwhkqbx4ZEOBTVaS4c9qirIcUNAJ0hSiWcP75M_OCK0uLmvDBLqE-Xd-BOLi9QhwW0eI5EcpNxckKTxT3N-h2u_qaDAjprZpMArZzGpC0IIbRZD7XUST_jrEAHmUb9CGHwtdJVkgjJdvNvVT25eJ3hNs-");'></div>
+<div class="flex-1">
+<p class="text-sm text-text-secondary font-medium mb-1">Mobile Development • 2 Feb 2024</p>
+<h3 class="text-xl font-bold text-text-primary mb-2">Cross-Platform Mobile Development: A Comprehensive Guide</h3>
+<p class="text-text-secondary mb-4">
+                    Dive into the world of cross-platform mobile development with frameworks like React Native and Flutter. Understand the benefits, challenges, and how to build efficient and
+                    engaging mobile apps.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline" href="#">Read More →</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row items-center gap-8 rounded-lg overflow-hidden">
+<div class="w-full md:w-1/3 h-64 md:h-auto md:aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCi1yiZJuQghP_vBKWqNTOaxWRy08bRIjkg7mciHe6jpHbBVKv06Gn91fGz_bBo2zM4lJmrxl-kVuEgF4WcrTnkupPMkDoFft3f8YOI69bFxxyRO4eNQoLcowmjNKJFQgbs-rwhyAvyWlWtO65QlqWiIKNY2rUkni1DBvO7EkZ-Ux0e-xEuIisnUWkIgLACMsBbMZsZLC_LoIrOJ0okpSGGPY5gnTeDTn7HB5UEtAVuB6qt0YX9bBK64poWiib0fmSiZqU87ZY3ZIqy");'></div>
+<div class="flex-1">
+<p class="text-sm text-text-secondary font-medium mb-1">Data Science • 18 Mar 2024</p>
+<h3 class="text-xl font-bold text-text-primary mb-2">Introduction to Machine Learning for Developers</h3>
+<p class="text-text-secondary mb-4">
+                    Get started with machine learning concepts and techniques tailored for software developers. Learn about algorithms, data preprocessing, and how to integrate ML models into your
+                    applications.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline" href="#">Read More →</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row-reverse items-center gap-8 rounded-lg overflow-hidden">
+<div class="w-full md:w-1/3 h-64 md:h-auto md:aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPw1bf2iKdKFp3m9tNvLBL759NTYIlC4XUR6wgppxYvPPYqYG5Gdox4UdrS3ubtIfB0CixWCDmvWlnFFFj9zMttfB741pAyhuv8GA7VpYRB8klBYuUTV7feR38dx0P93GYD6exav5qgrtcBgnCsp8xBBxWnE5_dFmj4SLrqLsKW9dImVPfr8T7UdqloOG1qtDOmsWyXgVZgz7-pvSsceHtMsZhtbm0QPPWQXFw_y5mZL6x9-6qZ4MQKG4pkMXs3puP1hNz_1rNutTO");'></div>
+<div class="flex-1">
+<p class="text-sm text-text-secondary font-medium mb-1">Web Development • 5 Apr 2024</p>
+<h3 class="text-xl font-bold text-text-primary mb-2">Mastering CSS Grid and Flexbox for Responsive Layouts</h3>
+<p class="text-text-secondary mb-4">
+                    Enhance your web design skills by mastering CSS Grid and Flexbox. This guide covers advanced techniques for creating responsive and dynamic layouts that adapt to various
+                    screen sizes.
+                  </p>
+<a class="font-semibold text-[var(--primary-color)] hover:underline" href="#">Read More →</a>
+</div>
+</article>
+</div>
+<nav aria-label="Pagination" class="flex items-center justify-center pt-16">
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-md text-text-secondary hover:bg-gray-100" href="#">
+<span class="sr-only">Previous</span>
+<span class="material-symbols-outlined"> chevron_left </span>
+</a>
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-md text-white bg-[var(--primary-color)] font-medium text-sm" href="#">1</a>
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-md text-text-secondary hover:bg-gray-100 font-medium text-sm" href="#">2</a>
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-md text-text-secondary hover:bg-gray-100 font-medium text-sm" href="#">3</a>
+<span class="inline-flex items-center justify-center w-10 h-10 text-text-secondary">...</span>
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-md text-text-secondary hover:bg-gray-100 font-medium text-sm" href="#">10</a>
+<a class="inline-flex items-center justify-center w-10 h-10 rounded-md text-text-secondary hover:bg-gray-100" href="#">
+<span class="sr-only">Next</span>
+<span class="material-symbols-outlined"> chevron_right </span>
+</a>
+</nav>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
