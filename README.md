@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio & Blog
 
-## Getting Started
+A Next.js 15 project for my personal portfolio and blog. The goal is to showcase full-stack case studies, publish long-form writing, and provide clear contact paths for recruiters, clients, and peers.
 
-First, run the development server:
+## Project Overview
+- **Mission:** Highlight technical depth and storytelling through featured projects and MDX-powered articles.
+- **Audience:** Hiring managers, potential clients, and fellow developers who need quick evidence of impact with the option to dig deeper.
+- **Status:** Planning artifacts complete; building the foundational layout and content pipeline is next.
+
+## Planning Docs
+- [Product Brief](docs/product-brief.md)
+- [Information Architecture](docs/information-architecture.md)
+
+These documents will evolve as the project grows; keep them in sync with implementation decisions.
+
+## Tech Stack
+- Next.js 15 App Router & TypeScript
+- Tailwind CSS v4 tokens
+- MDX for project case studies and blog posts
+- Deployed on Vercel (planned)
+
+## Local Development
+Install dependencies once, then use the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run linting as part of every change:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+- `src/app` – App Router routes, shared layout, and UI components
+- `docs/` – Planning artifacts (brief, IA, future component inventory)
+- `public/` – Static assets served via `next/image`
 
-## Learn More
+## Next Steps
+1. Finalize visual direction (color palette, typography, imagery references).
+2. Scaffold global layout, navigation, and Tailwind token configuration.
+3. Implement content pipeline for MDX projects and posts.
+4. Populate initial case studies and blog entries.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Track progress in README and docs to keep collaborators aligned.
